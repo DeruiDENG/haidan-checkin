@@ -15,8 +15,8 @@ const checkin = async () => {
   await page.click('input[type="submit"]');
 
   await page.waitForTimeout(5000);
-  await page.waitForSelector('#modalBtn123');
-  const modalBtn = await page.$('#modalBtn123');
+  await page.waitForSelector('#modalBtn', { timeout: 5000 });
+  const modalBtn = await page.$('#modalBtn');
   const modalButtonText = await page.evaluate((el: Node) => {
     return (el as HTMLInputElement).value;
   }, modalBtn);
