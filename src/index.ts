@@ -29,6 +29,13 @@ const checkin = async () => {
   await browser.close();
 };
 
-checkin();
+(async () => {
+  try {
+    await checkin();
+  } catch (e) {
+    console.log(e);
+    process.exit(1);
+  }
+})();
 
 module.exports = {};
