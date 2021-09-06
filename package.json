@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "^14"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node ./src/index.ts"
   },
   "keywords": [
     "checkin"
@@ -12,6 +15,8 @@
   "author": "DeruiDENG",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "puppeteer": "^10.2.0",
     "typescript": "^4.4.2"
   },
   "devDependencies": {
@@ -19,6 +24,7 @@
     "@typescript-eslint/parser": "^4.30.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "ts-node": "^10.2.1"
   }
 }

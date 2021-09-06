@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "commonjs",
-    "target": "ES6",
-    "allowJs": true,
+    "module": "esnext",
+    "target": "es2017",
     "noEmit": true,
     "lib": [
       "dom",
@@ -12,6 +11,8 @@
       "es6",
       "es7"
     ],
-    "jsx": "preserve"
+    "outDir": "build",
+    "moduleResolution": "Node",
+    "esModuleInterop": true
   }
 }
