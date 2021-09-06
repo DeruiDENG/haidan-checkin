@@ -28,3 +28,6 @@ jobs:
         cache: 'npm'
     - run: yarn
     - run: yarn start
+      env:
+        HAIDAN_PASSWORD: ${{ secrets.HAIDAN_PASSWORD }}
+        HAIDAN_USERNAME: ${{ secrets.HAIDAN_USERNAME }}
